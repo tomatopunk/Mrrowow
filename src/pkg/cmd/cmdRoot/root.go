@@ -19,7 +19,7 @@ func CreateCmdRoot() *cobra.Command {
 		SilenceErrors: true,
 		SilenceUsage:  true,
 		Example: heredoc.Doc(`
-			$ catt auth aliyun
+			$ catt auth ali
 			$ catt table new
 			$ catt table stop
 			$ catt table remove
@@ -45,7 +45,6 @@ func CreateCmdRoot() *cobra.Command {
 	// add child command
 	cmd.AddCommand(auth.NewAuthCmd())
 	cmd.AddCommand(table.NewTableCmd())
-	//cmd.AddCommand()
 
 	return cmd
 }

@@ -14,6 +14,6 @@ func NewAuthCmd() *cobra.Command {
 		`),
 	}
 
-	cmd.AddCommand(NewAliyunAuthCmd())
+	cmd.AddCommand(NewAlibabaCloudAuthCmd())
 	return cmd
 }

@@ -6,6 +6,5 @@ import (
 
 func main() {
 	cmdRoot := cmdRoot.CreateCmdRoot()
-
 	cmdRoot.Execute()
 }
